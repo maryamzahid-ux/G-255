@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #0f172a;
+  --color-brand-gold: #fbbf24;
+  --color-brand-slate: #f8fafc;
+}
+
+:root {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.metric-card {
+  @apply rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:shadow-md;
+}
